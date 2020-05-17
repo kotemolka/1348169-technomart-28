@@ -12,21 +12,19 @@
 					<img src="https://via.placeholder.com/150x150" alt="Техномарт" width="220" height="47">
 				</a>
 				<input type="search" placeholder="Поиск:">
-				<a href="#">Закладки: 0</a><!-- Хотел бы услышать вашего мнения как правльно офорлять эти элементы, как по мне ссылки больше пожходять или все таки стоит использовать button? -->
-				<a href="#">Корзина: 0</a><!-- Хотел бы услышать вашего мнения как правльно офорлять эти элементы, как по мне ссылки больше пожходять или все таки стоит использовать button? -->
+				<a href="#">Закладки: 0</a>
+				<a href="#">Корзина: 0</a>
 				<a href="#">Оформить заказ</a>
 			</section>
 			<section>
-				<i>
-				   Интернет магазин<br>
-				   строительных материалов<br>
-				   и инстурментов для ремонта
-				</i>
-				<a href="tel: +78125550505">+7 (812) 555-05-05</a>
+				<h1>
+				   Интернет магазин строительных материалов и инстурментов для ремонта
+				</h1>
+				<a href="tel:+78125550505">+7 (812) 555-05-05</a>
 				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				<p>
-					<button type="button">Войти</button> 
-					<button type="button">Регистрация</button> 
+					<a href="#">Войти</a>
+					<a href="#">Регистрация</a>
 				</p>
 			</section>
 			<nav>
@@ -53,23 +51,23 @@
 				<h2>Перфораторы</h2>
 				<div>
 					<!-- фильтр -->
-					<form action="#" method="get"> 	<!-- Только недавно узнал что не стоило этого делать, но все же жду замечаний на самом деле не до конца понимаю как правильно это писать, но по учебнику и гуглу попробывал реализовать -->
+					<form action="#" method="get">
 						<fieldset>
 							<legend>Производители:</legend>
 							<label>
-								<input type="checkbox" name="prod" value="bosch">bosch
+								<input type="checkbox" name="prod-1" value="bosch">bosch
 							</label>
 							<label>
-								<input type="checkbox" name="prod" value="interckol">интерскол
+								<input type="checkbox" name="prod-2" value="interckol">интерскол
 							</label>
 							<label>
-								<input type="checkbox" name="prod" value="makita">makita
+								<input type="checkbox" name="prod-3" value="makita">makita
 							</label>
 							<label>
-								<input type="checkbox" name="prod" value="gewalt">gewalt
+								<input type="checkbox" name="prod-4" value="gewalt">gewalt
 							</label>
 							<label>
-								<input type="checkbox" name="prod" value="hitachi">hitachi
+								<input type="checkbox" name="prod-5" value="hitachi">hitachi
 							</label>
 						</fieldset>
 						<fieldset>
@@ -81,80 +79,118 @@
 								<input type="radio" name="area" value="noakum">Сетевые
 							</label>
 						</fieldset>
-						<input type="submit" name="enter" value="Показать">
+						<button type="submit">Показать</button>
 					</form>
 				</div>
 				<div>
 					<!-- сортировка -->
-					<article>
-						<a href="#">
-							<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112"><br>
+				<ul>	
+					<li>
+						<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112">
+						<div>	
 							<h3>Перфоратор Bosch BGF 3000</h3>
-							<p><s>22500 р.</s></p>
-							<p>15500р.</p>
-						</a>	
-					</article>
-					<article>
-						<a href="#">
-							<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112"><br>
+							<span>22500 р.</span>
+							<a href="#">15500 р.</a>
+						</div>	
+						<div>
+							<a href="#">Купить</a>
+							<a href="#">В корзину</a>
+						</div>	
+					</li>
+					<li>
+						<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112">
+						<div>
 							<h3>Перфоратор Bosch BGF 6000</h3>
-							<p><s>30500 р.</s></p>
-							<p>25500р.</p>
-						</a>	
-					</article>
-					<article> <!-- Тут по макету по сути должны быть ссылки при наведение, но не разобрался как это вложить туда -->
-						<a href="#">
-							<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112"><br>
+							<span>30500 р.</span>
+							<a href="#">25500 р.</a>
+						</div>	
+						<div>
+							<a href="#">Купить</a>
+							<a href="#">В корзину</a>
+						</div>	
+					</li>
+					<li>
+						<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112">
+						<div>
 							<h3>Перфоратор Bosch BGF 2000</h3>
-							<p>12500р.</p>
-						</a>	
-					</article>
-					<article>
-						<a href="#">
-							<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112"><br>
+							<a href="#">12500 р.</a>
+						</div>		
+						<div>
+							<a href="#">Купить</a>
+							<a href="#">В корзину</a>
+						</div>	
+					</li>
+					<li>
+						<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112">
+						<div>
 							<h3>Перфоратор Bosch BGF 3000</h3>
-							<p><s>22500 р.</s></p>
-							<p>15500р.</p>
-						</a>	
-					</article>
-					<article>
-						<a href="#">
-							<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112"><br>
+							<span>22500 р.</span>
+							<a href="#">15500 р.</a>
+						</div>	
+						<div>
+							<a href="#">Купить</a>
+							<a href="#">В корзину</a>
+						</div>	
+					</li>
+					<li>
+						<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112">
+						<div>
 							<h3>Перфоратор Bosch BGF 6000</h3>
-							<p><s>30500 р.</s></p>
-							<p>25500р.</p>
-						</a>	
-					</article>
-					<article>
-						<a href="#">
-							<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112"><br>
+							<span>30500 р.</span>
+							<a href="#">25500 р.</a>
+						</div>	
+						<div>
+							<a href="#">Купить</a>
+							<a href="#">В корзину</a>
+						</div>	
+					</li>
+					<li>
+						<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112">
+						<div>
 							<h3>Перфоратор Bosch BGF 2000</h3>
-							<p>12500р.</p>
-						</a>	
-					</article>
-					<article>
-						<a href="#">
-							<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112"><br>
+							<a href="#">12500 р.</a>
+						</div>	
+						<div>
+							<a href="#">Купить</a>
+							<a href="#">В корзину</a>
+						</div>	
+					</li>
+					<li>
+						<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112">
+						<div>
 							<h3>Перфоратор Bosch BGF 3000</h3>
-							<p><s>22500 р.</s></p>
-							<p>15500р.</p>
-						</a>	
-					</article>
-					<article>
-						<a href="#">
-							<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112"><br>
+							<span>22500 р.</span>
+							<a href="#">15500 р.</a>
+						</div>	
+						<div>
+							<a href="#">Купить</a>
+							<a href="#">В корзину</a>
+						</div>	
+					</li>
+					<li>
+						<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112">
+						<div>
 							<h3>Перфоратор Bosch BGF 6000</h3>
-							<p><s>30500 р.</s></p>
-							<p>25500р.</p>
-						</a>	
-					</article>
-					<article>
-						<a href="#">
-							<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112"><br>
+							<span>30500 р.</span>
+							<a href="#">25500 р.</a>
+						</div>	
+						<div>
+							<a href="#">Купить</a>
+							<a href="#">В корзину</a>
+						</div>	
+					</li>
+					<li>
+						<img src="https://via.placeholder.com/150x150" alt="Перфоратор Bosch" width="127" height="112">
+						<div>
 							<h3>Перфоратор Bosch BGF 2000</h3>
-							<p>12500р.</p>
-						</a>	
-					</article>
+							<a href="#">12500 р.</a>
+						</div>	
+						<div>
+							<a href="#">Купить</a>
+							<a href="#">В корзину</a>
+						</div>	
+					</li>										
+				</ul>	
 				</div>
 				<ul>
 					<li><a href="#">1</a></li>
@@ -212,7 +248,7 @@
 				</p>
 				<p>
 					Разработано &mdash;<br>
-					<a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+					<a href="https://htmlacademy.ru/" target="_blank">htmlacademy.ru</a>
 				</p>
 			</section>
 		</footer>

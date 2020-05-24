@@ -19,7 +19,7 @@
 			</section>
 			
 			<section>
-				<h1 class="visually-hidden">Каталог товаров - Интернет-магазин &laquoТехномарт&raquo</h1>
+				<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 				<a href="tel:+78125550505">+7 (812) 555-05-05</a>
 				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				<div>
@@ -52,16 +52,16 @@
 					<li><a href="#">Перфораторы</a></li>
 				</ul>
 				<h2>Перфораторы</h2>
-				<div>
+				<section>
 					<span>Фильтр:</span>
-					<div>
-						<span>Цена:</span>
-						<button type="button"></button>
-						<button type="button"></button>
-						<input type="text">
-						<input type="text">
-					</div>
-					<form action="https://echo.htmlacademy.ru/" method="get" output="e.value">												
+					<form action="https://echo.htmlacademy.ru/" method="get">
+						<fieldset>
+							<legend>>Цена:</legend>
+							<button type="button"></button>
+							<button type="button"></button>
+							<input type="text">
+							<input type="text">	
+						</fieldset>						
 						<fieldset>
 							<legend>Производители:</legend>
 								<ul>
@@ -91,19 +91,19 @@
 							<legend>Питание</legend>
 								<ul>
 									<li>
-										<input type="radio" id="akkumulyatornyye" name="tipy-pitaniye" value="akkumulyatornyye" checked>
-										<label for="akkumulyatornyye">Аккумуляторные</label>
+										<input type="radio" id="battery" name="power-source" value="battery" checked>
+										<label for="battery">Аккумуляторные</label>
 									</li>
 									<li>
-										<input type="radio" id="setevyye" name="tipy-pitaniye" value="setevyye">
-										<label for="setevyye">Сетевые</label>
+										<input type="radio" id="electric-powered" name="power-source" value="electric-powered">
+										<label for="electric-powered">Сетевые</label>
 									</li>
 								</ul>
 						</fieldset>
 						<button type="submit">Показать</button>
 					</form>
-				</div>
-				<div>
+				</section>
+				<section>
 					<div>
 						<span>Сортировка:</span>
 						<ul>
@@ -223,7 +223,7 @@
 							</div>	
 						</li>										
 					</ul>	
-				</div>
+				</section>
 				<ul>
 					<li><a href="#">1</a></li>
 					<li><a href="#">2</a></li>

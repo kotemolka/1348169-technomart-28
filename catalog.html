@@ -3,44 +3,53 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Каталог товаров</title>
+		<link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-	  	<header>
-			
-			<section>
-				<a href="index.html">
-					<img src="img/icons/logo-technomart.svg" alt="Интернет-магазин Техномарт" width="108" height="18">
-				</a>
-				<input type="search" placeholder="Поиск:">
-				<a href="#">Закладки: 0</a>
-				<a href="#">Корзина: 10</a>
-				<a href="#">Оформить заказ</a>
-			</section>
-			
-			<section>
-				<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-				<a href="tel:+78125550505">+7 (812) 555-05-05</a>
-				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-				<div>
-					<span>Равшан Джамшутович</span>
+	  	<header>	
+	  		<nav class="main-navigation">  		
+				<section class="top-navigation">
+					<div class="logo">
+					<a href="index.html">
+						<img src="img/icons/logo-technomart.svg" alt="Интернет-магазин Техномарт" width="108" height="18">
+					</a>
+					</div>
+					<input type="search" placeholder="Поиск:">
+					<p class="button">
+						<a href="#">Закладки: 0</a>
+						<a href="#">Корзина: 10</a>
+					</p>
+					<div class="checkout">
+						<a href="#">Оформить заказ</a>
+					</div>
+				</section>			
+				<section class="contact">
+					<h1>Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
+					<div class="tef">
+						<a href="tel:+78125550505">+7 (812) 555-05-05</a>
+						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					</div>	
+					<p class="account">
+						<a href="#">Равшан Джамшутович</a>
+						<ul class="pod-account">
+							<li><a href="#">Мои заказы</a></li>
+							<li><a href="#">Личный кабинет</a></li>
+						</ul>
+					</p>
+				</section>
+				<section class="nav">
 					<ul>
-						<li><a href="#">Мои заказы</a></li>
-						<li><a href="#">Личный кабинет</a></li>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Компания</a></li>
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Спецпредложения</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Контакты</a></li>
 					</ul>
-				</div>
-			</section>
-			<nav>
-				<ul>
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">Компания</a></li>
-					<li><a href="catalog.html">Каталог</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Спецпредложения</a></li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
+				</section>	
+			</nav>				
 		</header>
 
 		<main>			
@@ -243,8 +252,10 @@
 		</main>
 
 		<footer>			
-			<section>
-				<a href="index.html"><img src="img/icons/logo-technomart.svg" alt="Интернет-магазин Техномарт" width="138" height="23"></a>
+			<section class="footer-nav">
+				<div class="footer-logo">
+					<a href="index.html"><img src="img/icons/logo-technomart.svg" alt="Интернет-магазин Техномарт" width="138" height="23"></a>
+				</div>
 				<ul>
 					<li><a href="#">Компания</a></li>
 					<li><a href="#">Новости</a></li>
@@ -254,7 +265,7 @@
 				</ul>
 			</section>
 			
-			<section>
+			<section class="footer-category">
 				<p>
 					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
 					+7 (812) 555-05-55

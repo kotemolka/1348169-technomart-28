@@ -2,6 +2,7 @@
 	/* basic-color */
 	--basic-black: #000000;
 	--dark-text: #32425C;
+	--grey-text: #A9A9A9;
 	--basic-white: #FFFFFF;
 	--basic-black-grey: #1D2739;
 	--basic-dark-grey: #293449;
@@ -11,6 +12,7 @@
 	--basic-green: #63A63E;
 	--basic-reddark: #BA2732;
 	--basic-red: #EE3643;
+	--basic-brown:#F7F3EC;
 	--basic-brownlight: #F9F5F0;
 
 
@@ -22,6 +24,11 @@
 	--special-yellowlight: #FFD180;
 
 	--focus-color: #161D29;
+	--footer-color: #F3F7F9;
+	--shadow-green: #367315;
+	--dark-green: #518534;
+	--green-light: #5FBB2D;
+	--gray-pagination: #E5E5E5;
 }
 
 body{
@@ -126,7 +133,7 @@ img{
 
 .tef a{
 	color: var(--basic-red);
-	border: 3px solid #FFFFFF;
+	border: 3px solid  var(--basic-white);
 	box-sizing: border-box;
 }
 
@@ -228,11 +235,131 @@ img{
 	color: var(--basic-greylight);
 }
 
-/* красная зона */
-
-.about{
-
+.main-catalog li{
+	list-style: none;
 }
+
+.main-catalog a{
+	font-family: PT Sans;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: var(--black-text);
+}
+
+.main-catalog h2{
+	font-family: Cuprum;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: var(--dark-text);
+	background-color: var(--basic-extra-greylight);
+}
+
+.main-catalog legend{
+	font-family: PT Sans;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.main-catalog label{
+	font-family: PT Sans;
+	font-size: 15px;
+	line-height: 19px;
+	text-transform: uppercase;
+}
+
+.products h3{
+	font-family: PT Sans;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.products p{
+	font-family: PT Sans;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 18px;	
+	text-decoration-line: line-through;
+	text-transform: uppercase;
+	color: var(--grey-text);
+}
+
+.products span{
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 18px;	
+	text-transform: uppercase;
+	color: var(--basic-white);
+	background-image: url(../img/icons/red-button.svg);
+}
+
+.buy a{
+	font-family: Cuprum;
+	font-size: 14px;
+	background: var(--basic-green);
+	border-radius: 2px;	
+	color: var(--basic-white);
+	box-shadow: inset 0px -3px 0px var(--shadow-green);	
+}
+
+.bookmarks a{
+	font-family: Cuprum;
+	font-size: 14px;	
+	color: var(--dark-text);
+	border: 3px solid var(--basic-green);
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+
+.buy a:hover{
+	background: var(--green-light);
+	box-shadow: inset 0px -3px 0px var(--shadow-green);
+	border-radius: 2px;
+}
+
+.bookmarks a:hover{
+	border: 3px solid var(--dark-text);
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+
+.buy a:focus{
+	background: var(--dark-green);
+	box-shadow: inset 0px -3px 0px var(--shadow-green);
+	border-radius: 2px;
+}
+
+.bookmarks a:focus{
+	border: 3px solid var(--dark-text);
+	box-sizing: border-box;
+	border-radius: 2px;
+	opacity: 0.5;
+}
+
+.pagination a{
+	background: var(--basic-white);
+	border: 1px solid var(--gray-pagination);
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+
+.pagination a:hover{
+	border: 1px solid var(--basic-greylight);
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+
+.pagination a:focus{
+	border: 1px solid var(--basic-red);
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+
+/* красная зона */
 
 .about h2,
 .map h2{
@@ -316,6 +443,56 @@ img{
 
 .footer-nav a:focus,
 .footer-category a:focus{
-	text-decoration: underline;
+	text-decoration: none;
 	opacity: 0.5;
+}
+
+.footer-category p{
+	font-family: Cuprum;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: var(--footer-color);
+}
+
+.footer-links{
+	background-color: var(--basic-dark-grey);
+}
+
+.footer-links p{
+	font-family: Cuprum;
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-white);
+}
+
+.footer-links li{
+	list-style: none;
+}
+
+.footer-links a{
+	color: var(--special-yellowlight);
+	font-size: 16px;
+}
+
+.footer-links a:hover{
+	text-decoration: underline;
+}
+
+.footer-links a:focus{
+	text-decoration: none;
+	color: var(--basic-red);
+}
+
+
+/*
+.social span{
+	font-size: 0;
+}
+*/
+
+.social a:hover,
+.social a:focus{
+ color: var(--basic-red);
+ text-decoration: none;
 }

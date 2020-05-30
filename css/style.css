@@ -44,9 +44,9 @@ body{
 
 }
 
-a, h2{
+a{
 	text-decoration: none;
-	font-family: 'Cuprum';
+	font-family: 'Cuprum', sans-serif;
 }
 
 img{
@@ -57,8 +57,7 @@ img{
 /* main navigation */
 
 .main-navigation{
-	font-family: 'Cuprum';
-	font-weight: 400;
+	font-family: 'Cuprum', sans-serif;
 	font-size: 18px;
 	background-color: var(--basic-extra-greylight);
 }
@@ -71,17 +70,14 @@ img{
 	background-color: var(--basic-dark-grey);
 }
 
-.logo{
+a.logo{
 	width: 220px;
-	height: 47px;
 	background-color: var(--basic-red);
 	box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
 .logo a{
 	display: block;
-	height: 100%;
-	text-align: center;
 }
 
 .logo a:focus,
@@ -104,14 +100,11 @@ img{
 
 .checkout{
 	width: 150px;
-	height: 45px;
 	background-color: var(--basic-green);
 }
 
 .checkout a{
 	display: block;	
-	text-align: center;	
-	height: 100%;
 }
 
 .checkout a:focus{
@@ -128,7 +121,6 @@ img{
 	font-style: italic;
 	color: var(--basic-red);
 	width: 197px;
-	height: 71px;
 }
 
 .tef a{
@@ -144,13 +136,10 @@ img{
 
 .button{
 	width: 150px;
-	height: 42px;
 }
 
 .button a{
 	display: block;
-	text-align: center;
-	height: 100%
 }
 
 .button a:focus{
@@ -163,7 +152,6 @@ img{
 	color: var(--basic-black);
 	display: block;
 	width: 121px;
-	height: 45px;
 	text-align: center;
 }
 
@@ -178,12 +166,10 @@ img{
 .account{
 	background-color: var(--basic-white);
 	width: 299px;
-	height: 45px;
 }
 
 .account a{
 	display: block;
-	height: 100%;
 	text-align: center;
 	color: var(--black-text);
 }
@@ -198,7 +184,6 @@ img{
 
 .pod-account a{
 	font-size: 16px;
-	line-height: 16px;
 	color: var(--dark-text);
 }
 
@@ -223,7 +208,6 @@ img{
 
 .nav a{
 	display: block;
-	height: 100%;
 }
 
 .nav a:hover{
@@ -240,7 +224,7 @@ img{
 }
 
 .main-catalog a{
-	font-family: PT Sans;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -248,7 +232,7 @@ img{
 }
 
 .main-catalog h2{
-	font-family: Cuprum;
+	font-family: 'Cuprum', sans-serif;
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
@@ -257,7 +241,7 @@ img{
 }
 
 .main-catalog legend{
-	font-family: PT Sans;
+	font-family: 'PT Sans', sans-serif;
 	font-weight: 700;
 	font-size: 17px;
 	line-height: 30px;
@@ -265,21 +249,18 @@ img{
 }
 
 .main-catalog label{
-	font-family: PT Sans;
 	font-size: 15px;
 	line-height: 19px;
 	text-transform: uppercase;
 }
 
 .products h3{
-	font-family: PT Sans;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 20px;
 }
 
 .products p{
-	font-family: PT Sans;
 	font-weight: 700;
 	font-size: 17px;
 	line-height: 18px;	
@@ -298,7 +279,6 @@ img{
 }
 
 .buy a{
-	font-family: Cuprum;
 	font-size: 14px;
 	background: var(--basic-green);
 	border-radius: 2px;	
@@ -307,7 +287,6 @@ img{
 }
 
 .bookmarks a{
-	font-family: Cuprum;
 	font-size: 14px;	
 	color: var(--dark-text);
 	border: 3px solid var(--basic-green);
@@ -369,7 +348,7 @@ img{
 }
 
 .about li{
-	font-family: Cuprum;
+	font-family: 'Cuprum', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;	
@@ -385,7 +364,6 @@ img{
 .about a{
 	display: block;
 	width: 220px;
-	height: 38px;
 	background-color: var(--basic-red);
 	color: var(--basic-white);
 	text-align: center;
@@ -396,7 +374,6 @@ img{
 .map a{
 	display: block;
 	width: 300px;
-	height: 38px;
 	background-color: var(--basic-red);
 	color: var(--basic-white);
 	text-align: center;
@@ -410,15 +387,12 @@ img{
 
 .footer-logo{
 	width: 220px;
-	height: 68px;
 	background-color: var(--basic-red);
 	box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
 .footer-logo a{
 	display: block;
-	height: 100%;
-	text-align: center;
 }
 
 .footer-nav li,
@@ -448,7 +422,7 @@ img{
 }
 
 .footer-category p{
-	font-family: Cuprum;
+	font-family: 'Cuprum', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
@@ -460,7 +434,7 @@ img{
 }
 
 .footer-links p{
-	font-family: Cuprum;
+	font-family: 'Cuprum', sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	color: var(--basic-white);
